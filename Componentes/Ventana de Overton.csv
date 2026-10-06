@@ -1,0 +1,21 @@
+,,,,
+,Carta,Valor crítico,Descripción,Consecuencia
+,VO1. Ultimátum reaccionario,Ventana -9,"Cuando la burguesía pierde el control del relato, ofrece una salida: la paz social. Pero es una paz que mantiene el sistema. Aceptarla da tiempo, pero debilita al colectivo. Rechazarla es arriesgado, pero mantiene la dignidad.","Aceptar: -3 Solidaridad, -3 Conciencia colectiva. Ventana sube a -5. Se evita el fascismo. Rechazar: Ventana baja a -10. Se activa VO2."
+,VO2. Fascismo,Ventana -10,"Cuando la burguesía no puede derrotar a la clase trabajadora por medios democráticos, recurre al fascismo. El fascismo no es una derrota definitiva: es una fase. La resistencia es posible, pero requiere organización y conciencia.",Organización descartada. Solidaridad y Conciencia colectiva a la mitad. Ventana baja a -10. Se activa el Estado de Excepción (3 turnos).
+,VO3. Estado de Excepción,(mecánica),"Durante 3 turnos, el colectivo debe resistir. No se pueden comprar cartas de Organización. Las Acciones Burguesas tienen +1 efecto. Cada turno, prueba: Solidaridad ≥ 3 o Conciencia colectiva ≥ 5.",3 pruebas superadas: sale del Estado de Excepción. Ventana sube a -5. Recupera 1 carta de Organización (la que elija). +1 Conciencia colectiva. 2 pruebas: sale con coste. Ventana sube a -7. No recupera Organización. -1 Solidaridad. 1 o 0 pruebas: se activa VO4 (Guerra Civil).
+,VO4. Guerra Civil,No resistir el Estado de Excepción,"Cuando la burguesía pierde el control del relato y el colectivo no resiste, recurre a la guerra civil. La guerra civil no es una victoria: es una derrota para todos. Pero no es inevitable: depende de la organización y la conciencia.",Todos pierden. El capital gana. La partida termina.
+,VO5. Transición pacífica,Ventana +10 con requisitos,"Cuando la correlación de fuerzas es favorable, la transición al socialismo puede ser pacífica. La burguesía no siempre recurre a la violencia: a veces acepta la derrota.","Victoria inmediata sin guerra civil. Requiere tener los requisitos de ""Abolición de la propiedad privada"" o ""Sociedad sin clases""."
+,,,,
+,,,,
+,Valor,Estado,Efecto,
+,+10,Transición pacífica,Victoria inmediata (con requisitos).,
+,+7 a +9,Ventana comunista,Cartas de Organización dan +1 Conciencia colectiva. Cartas de Victoria disponibles.,
+,+4 a +6,Ventana socialista,Cartas de Organización cuestan -1 Solidaridad. Cartas de Transición disponibles.,
+,+1 a +3,Ventana reformista,Todo normal. Reformas pacíficas posibles.,
+,0,Ventana neutra,Estado inicial.,
+,-1 a -2,Ventana conservadora,Cartas de Organización cuestan +1 Solidaridad.,
+,-3 a -5,Ventana reaccionaria,Acciones Burguesas +1 efecto. Cartas de Organización cuestan +2 Solidaridad.,
+,-6 a -8,Ventana autoritaria,La burguesía controla el relato. Se descarta 1 carta de Organización por ronda.,
+,-9,Ultimátum reaccionario,VO1: aceptar (paz social) o rechazar (fascismo).,
+,-10,Fascismo,VO2: Organización descartada. Estado de Excepción.,
+,-11,Guerra Civil,VO4: todos pierden. El capital gana.,

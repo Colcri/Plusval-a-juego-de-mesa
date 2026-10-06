@@ -1,0 +1,42 @@
+,,,,
+,Carta,Contexto,Requisito,Efecto
+,O1. Organización de trabajadores,"Forma elemental de organización. No basta, pero es necesaria. Sin organización, no hay fuerza. Los trabajadores solos son débiles; organizados, son invencibles.",3 Solidaridad,+1 Solidaridad por turno (permanente).
+,O2. Asamblea,"Democracia directa de los trabajadores. Decidir entre todos es más lento, pero es más justo. La asamblea es la escuela de la democracia real.",4 Solidaridad,+1 Conciencia colectiva (permanente).
+,O3. Cooperativa,"Producir sin patrón. Una escuela de autogestión que enseña a organizarse sin jefe. No es socialismo, pero es un paso. La cooperativa demuestra que se puede producir sin explotación.",4 Solidaridad y 3 Recursos colectivos,+2 Recursos colectivos por turno (permanente).
+,O4. Fondo de ayuda mutua,"Un fondo colectivo para ayudarnos entre nosotros. No es una caja privada de ahorro del trabajador, que subsidia a los privados: es un fondo de los trabajadores para los trabajadores. Sin él, la huelga no dura.",4 Solidaridad,"+3 Recursos colectivos (una vez), +1 Solidaridad."
+,O5. Medio de comunicación popular,"El periódico ya no es la fuente principal de información. Hoy son medios digitales, redes, podcasts, radios comunitarias. Un medio de comunicación popular es una herramienta de organización y educación cultural. Sin medios propios, no hay relato propio.",4 Solidaridad y 2 Recursos colectivos,+1 Conciencia colectiva por turno (permanente). +1 Cultura por turno (permanente).
+,O6. Reforma agraria,Sin tierra no hay seguridad alimentaria. La tierra no se vende: se trabaja. La reforma agraria es la base de la producción colectiva de alimentos.,4 Solidaridad y 3 Recursos colectivos,Desbloquea Huerta y Espacio de cuidado. +1 Recurso colectivo (permanente).
+,O7. Huerta comunitaria,Producción colectiva de alimentos. Requiere tierra. La comida no es una mercancía: es un derecho. La huerta comunitaria es una escuela de soberanía alimentaria.,3 Solidaridad + Reforma agraria,"+1 Recurso colectivo por turno, +1 Solidaridad."
+,O8. Espacio de cuidado comunitario,"No es solo comer juntos: es un espacio de cuidado. Los espacios de cuidado deben ser accesibles al público. Si no, el trabajo no remunerado recae sobre las mujeres. El cuidado digno es un derecho, no una carga.",3 Solidaridad + Reforma agraria,"+1 Recurso colectivo por turno, +1 Solidaridad."
+,O9. Banco central público,"El banco central no es neutral. Nacionalizarlo es recuperar la soberanía monetaria. La moneda no es un objeto técnico: es poder. Sin soberanía monetaria, la organización depende de los bolsillos individuales.",4 Solidaridad y 3 Recursos colectivos,Soberanía monetaria. Desbloquea opción C en D4. +1 Recurso colectivo por turno (permanente).
+,O10. Conciencia de clase,La conciencia de clase se construye colectivamente. Un trabajador que ha sido integrado al sistema puede volver a la clase si hay un proceso colectivo de educación política. No es un acto individual: es un proceso colectivo.,5 Solidaridad y 3 Recursos colectivos,Quita 1 ficha de Trabajador Cooptado a un jugador. Ese jugador pierde 1 turno sin jugar carta. +1 Conciencia colectiva.
+,O11. Educación pública y gratuita,"La educación no es una mercancía: es un derecho. Sin educación pública y gratuita, el conocimiento se convierte en privilegio de quien puede pagarlo. La educación integral forma sujetos críticos, no solo técnicos. No es lo mismo tener acceso a la educación que ser educado íntegramente.",5 Solidaridad y 3 Recursos colectivos,Desbloquea la opción B de C12 (La educación privada). +1 Conciencia colectiva por turno (permanente). +1 Cultura por turno (permanente).
+,O12. Salud pública y gratuita,"La salud no es una mercancía: es un derecho. Sin salud pública y gratuita, la enfermedad se convierte en negocio. No es lo mismo tener acceso a la salud que ser atendido con dignidad. La salud digna no se mendiga: se conquista.",5 Solidaridad y 3 Recursos colectivos,Desbloquea la opción B de C9 (La salud privada). +1 Solidaridad por turno (permanente). +1 Conciencia colectiva por turno (permanente).
+,O13. Vivienda digna,"La vivienda no es una mercancía: es un derecho. Sin vivienda digna, el trabajador queda a merced del alquiler abusivo, la hipoteca impagable y el desalojo. No es lo mismo tener un techo que vivir con dignidad. La vivienda digna no se mendiga: se conquista.",5 Solidaridad y 4 Recursos colectivos,"Desbloquea la opción B de C4 (El desalojo), C5 (El costo de la vivienda) y C11 (La gentrificación). +1 Solidaridad por turno (permanente). +1 Conciencia colectiva por turno (permanente)."
+,O14. Internacionalismo,La clase trabajadora no tiene patria. La solidaridad no conoce fronteras. Juntos somos más fuertes. El internacionalismo no es un lujo: es una necesidad.,6 Solidaridad y 2 Recursos colectivos,"+1 Solidaridad, +1 Conciencia colectiva. Desbloquea opción B en D5."
+,O15. Huelga general,"La huelga general paraliza el sistema y muestra la fuerza de la clase trabajadora. No es una revolución: es una demostración. La fuerza se muestra, no se gasta.",6 Solidaridad y 4 Recursos colectivos,Descarta 2 Crisis. +1 Conciencia colectiva.
+,O16. Partido de los trabajadores,"El partido de los trabajadores es la forma en que la clase se organiza políticamente. Sin partido, la lucha económica no se convierte en lucha por el poder. El partido no basta: requiere organización de base, conciencia de clase y condiciones materiales. El partido no es un fin: es un instrumento.",9 Solidaridad y 5 Recursos colectivos,"+2 Conciencia colectiva. Si Conciencia colectiva ≥ 7, victoria inmediata."
+,O17. Abolición de la propiedad privada,"El comunismo no abole la propiedad personal, sino la propiedad privada de los medios de producción. La abolición no es un acto legal: es un proceso de transformación social. No se trata de quitarle a nadie su casa: se trata de que nadie tenga el poder de quitarle la casa a otro.","10 Conciencia colectiva, 8 Solidaridad y 8 Recursos colectivos",Victoria inmediata.
+,O18. Sociedad sin clases,"Sin clases, sin Estado, sin explotación. 'De cada cual según sus capacidades, a cada cual según sus necesidades.' No es un paraíso: es una sociedad en construcción permanente. La libertad no es hacer lo que quieras: es no tener que vender tu vida para vivir.",12 Conciencia colectiva,Victoria inmediata.
+,O16. Educación pública y gratuita,"La educación no es una mercancía: es un derecho. Sin educación pública y gratuita, el conocimiento se convierte en privilegio de quien puede pagarlo. La educación integral forma sujetos críticos, no solo técnicos. No es lo mismo tener acceso a la educación que ser educado íntegramente.",5 Solidaridad y 3 Recursos colectivos,Desbloquea la opción B de C12 (La educación privada). +1 Conciencia colectiva por turno (permanente). +1 Cultura por turno (permanente).
+,,,,
+,,,,
+,Nivel 1: Bases,"O1. Organización de trabajadores
+O2. Asamblea
+O3. Cooperativa
+O4. Fondo de ayuda mutua
+O5. Medio de comunicación popular",,
+,Nivel 2: Consolidación,"O6. Reforma agraria
+O7. Huerta comunitaria
+O8. Espacio de cuidado comunitario
+O9. Banco central público
+O10. Conciencia de clase
+O11. Educación pública y gratuita
+O12. Salud pública y gratuita
+O13. Vivienda digna",,
+,,,,
+,Nivel 3: Avance,"O14. Internacionalismo
+O15. Huelga general",,
+,Nivel 4: Objetivos finales,"O16. Partido de los trabajadores
+O17. Abolición de la propiedad privada
+O18. Sociedad sin clases",,
