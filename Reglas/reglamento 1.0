@@ -1,0 +1,430 @@
+REGLAS
+
+Es un juego cooperativo. Todos los jugadores son trabajadores que enfrentan juntos las crisis del capitalismo. El sistema no es un jugador: es el conjunto de pilas de Crisis y Acción Burguesa que se activan solas.
+
+Se gana si:
+
+Se logra 12 de Conciencia colectiva, o se compra "Abolición de la propiedad privada" (10 Conciencia colectiva, 8 Solidaridad, 8 Recursos colectivos), o se compra "Sociedad sin clases" (12 Conciencia colectiva), o se alcanza la Ventana de Overton +10 con los requisitos de victoria (transición pacífica).
+
+Se pierde si:
+
+Solidaridad llega a 0, o Recursos colectivos llegan a 0, o La Ventana de Overton llega a -11 (Guerra Civil), o 4+ fichas de Trabajador Cooptado activas (Reacción), o No resistís el Estado de Excepción (Fascismo → Guerra Civil).
+
+⚫ = opción egoísta (obligatoria si tienes ficha de Trabajador Cooptado).
+
+A = opción egoísta.
+
+B = opción colectiva.
+
+C = opción especial.
+
+Recursos: recurso único. Se diferencia en la jugabilidad si se recibe para uno mismo (Recursos personales) o para la comunidad (Recursos colectivos).
+
+Solidaridad: recurso colectivo (0-15).
+
+Conciencia colectiva: recurso colectivo (0-12).
+
+Cultura: recurso colectivo (0-10).
+
+La Cultura es un recurso colectivo (0-10) que representa la capacidad del colectivo de producir sentido común, formar sujetos críticos y disputar el relato. Sin cultura, la organización se vacía. Con cultura, la organización se fortalece.
+
+Conciencia personal: contador por jugador (0-10).
+
+Fichas de Trabajador Cooptado: 0-5 por jugador.
+
+Ventana de Overton: marcador de -11 a +10.
+
+Regla de cooptación:
+
+El capital coopta trabajadores para que vaya en contra de sus propios intereses creyéndose el discurso de que es clase media, un invento del capital.
+
+La ficha de Trabajador Cooptado se recibe por acciones egoístas, no por acumulación de Recursos.
+
+Conciencia personal 6+: no puede recibir fichas.
+
+Conciencia personal 3-5: puede recibir 1 ficha, pero no más.
+
+Conciencia personal 0-2: puede recibir fichas por cooptación ideológica.
+
+Conciencia personal 8+: puede quitar fichas a otros.
+
+# Nombres, diseño del tablero y diseño de las tarjetas de jugador
+
+Vamos por partes: primero nombres para el juego, luego el tablero con todos sus marcadores, y finalmente las tarjetas de jugador.
+
+
+Nombres para el juego
+
+El nombre actual, "Plusvalía",
+
+Diseño del tablero
+
+El tablero debe ser simple, claro y legible. No necesita ser un mapa: es una **hoja de registro** donde el colectivo ve de un vistazo el estado de la partida.
+
+### Zonas del tablero
+
+```
++------------------------------------------------------------------+
+|  PLUSVALÍA                                                       |
+|  "La historia de todas las sociedades es la historia de las       |
+|   luchas de clases" — Marx                                       |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 1: RECURSOS COLECTIVOS    |  ZONA 2: VENTANA DE OVERTON    |
+|  Solidaridad [0-15]             |  [-11 a +10]                   |
+|  Recursos    [0-20]             |  → +10: Transición pacífica    |
+|  Conciencia colectiva [0-12]    |  → +7 a +9: Ventana comunista  |
+|  Cultura     [0-10]             |  → +4 a +6: Ventana socialista |
+|                                  |  → +1 a +3: Ventana reformista |
+|                                  |  → 0: Ventana neutra           |
+|                                  |  → -1 a -2: Conservadora       |
+|                                  |  → -3 a -5: Reaccionaria       |
+|                                  |  → -6 a -8: Autoritaria        |
+|                                  |  → -9: Ultimátum               |
+|                                  |  → -10: Fascismo               |
+|                                  |  → -11: Guerra Civil           |
+|                                                                  |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 3: RONDA Y TURNO          |  ZONA 4: AGENTE BURGUÉS        |
+|  Ronda: [1-25]                   |  Jugador: ___________          |
+|  Turno: [1-75]                   |  Carta jugada: _______         |
+|  Fase: [Despertar/Organización/  |  Próximo agente: _______       |
+|         Avance/Definición]       |                                |
+|                                                                  |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 5: JUGADORES                                               |
+|  +----------------+  +----------------+  +----------------+     |
+|  | Jugador 1      |  | Jugador 2      |  | Jugador 3      |     |
+|  | Recursos pers. |  | Recursos pers. |  | Recursos pers. |     |
+|  | [0-15]         |  | [0-15]         |  | [0-15]         |     |
+|  | Conciencia     |  | Conciencia     |  | Conciencia     |     |
+|  | personal [0-10]|  | personal [0-10]|  | personal [0-10]|     |
+|  | Fichas CME:    |  | Fichas CME:    |  | Fichas CME:    |     |
+|  | [0-5]          |  | [0-5]          |  | [0-5]          |     |
+|  +----------------+  +----------------+  +----------------+     |
+|                                                                  |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 6: ORGANIZACIÓN (cartas compradas)                         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  | O1     | | O2     | | O3     | | O4     | | O5     |         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  | O6     | | O7     | | O8     | | O9     | | O10    |         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  | O11    | | O12    | | O13    | | O14    | | O15    |         |
+|  +--------+ +--------+ +--------+ +--------+ +--------+         |
+|  +--------+ +--------+ +--------+                               |
+|  | O16    | | O17    | | O18    |                               |
+|  +--------+ +--------+ +--------+                               |
+|                                                                  |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 7: CARTAS VISIBLES                                         |
+|  Organización (3 visibles): [O__] [O__] [O__]                    |
+|  Vida Cotidiana (última): [T__]                                   |
+|  Crisis activas: [CR__] [CR__]                                    |
+|  Cartas persistentes: [A__] [C__] [D__] [T__]                     |
+|                                                                  |
++------------------------------------------------------------------+
+|                                                                  |
+|  ZONA 8: ESTADO DE LA PARTIDA                                    |
+|  Victoria: [ ] Abolición [ ] Sociedad sin clases [ ] Partido     |
+|            [ ] Transición pacífica [ ] 12 Conciencia colectiva   |
+|  Derrota:  [ ] Recursos 0 [ ] Solidaridad 0 [ ] Guerra Civil     |
+|            [ ] Fascismo [ ] Reacción (4+ CME)                    |
+|                                                                  |
++------------------------------------------------------------------+
+```
+
+
+### Zona 1: Recursos colectivos
+
+| Recurso | Rango | Representación visual |
+|---|---|---|
+| **Solidaridad** | 0-15 | Barra verde |
+| **Recursos** | 0-20 | Barra azul |
+| **Conciencia colectiva** | 0-12 | Barra roja |
+| **Cultura** | 0-10 | Barra morada |
+
+**Diseño**: barras horizontales con marcas cada 5 unidades. El marcador se mueve con una ficha. Si un recurso llega a 0, se marca con una X roja.
+
+**Nota**: la Conciencia colectiva ya no da victoria automática a 12. A 12 se desbloquea "Sociedad sin clases". El rango 0-12 permite que suba un poco más antes de la catástrofe.
+
+
+### Zona 2: Ventana de Overton
+
+**Diseño**: una barra horizontal de -11 a +10 con zonas de color.
+
+```
+VENTANA DE OVERTON
+[-11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 +1 +2 +3 +4 +5 +6 +7 +8 +9 +10]
+  GC  F   U   A   A   A   R   R   R   C   C  N  R  R  R  S  S  S  C  C  C  TP
+```
+
+| Zona | Color | Efecto |
+|---|---|---|
+| **+10** | Verde brillante | Transición pacífica |
+| **+7 a +9** | Verde | Ventana comunista |
+| **+4 a +6** | Verde claro | Ventana socialista |
+| **+1 a +3** | Amarillo claro | Ventana reformista |
+| **0** | Blanco | Ventana neutra |
+| **-1 a -2** | Amarillo | Ventana conservadora |
+| **-3 a -5** | Naranja | Ventana reaccionaria |
+| **-6 a -8** | Rojo | Ventana autoritaria |
+| **-9** | Rojo oscuro | Ultimátum |
+| **-10** | Negro | Fascismo |
+| **-11** | Negro | Guerra Civil |
+
+**Diseño**: una barra horizontal con marcas cada número. El marcador se mueve con una ficha. Las zonas están coloreadas. Los números -9, -10 y -11 tienen iconos de advertencia.
+
+**Regla visual**: cuando la Ventana sube o baja, el jugador que la mueve debe anunciarlo en voz alta: "Ventana -7. Ventana autoritaria. La burguesía controla el relato."
+
+
+### Zona 3: Ronda y turno
+
+```
+RONDA: 5 / 25          TURNO: 15 / 75          FASE: Organización
+```
+
+**Regla visual**: cada ronda son 3 turnos. Al final de cada ronda (turnos 3, 6, 9, 12, 15, 18, 21, 24) se activa la Acción Burguesa y la Crisis.
+
+**Fases**:
+- **Fase 1 (Rondas 1-6)**: Despertar.
+- **Fase 2 (Rondas 7-12)**: Organización.
+- **Fase 3 (Rondas 13-18)**: Avance.
+- **Fase 4 (Rondas 19-25)**: Definición.
+
+**Diseño**: dos ruedas o dos contadores. La ronda se marca con una ficha que avanza cada 3 turnos. El turno se marca con una ficha que avanza cada turno. La fase se marca con una ficha que avanza cada 6 rondas.
+
+
+### Zona 4: Agente burgués
+
+```
+AGENTE BURGUÉS (Ronda actual)
+Jugador: ______________________
+Carta jugada: __________________
+Próximo agente: ________________
+```
+
+**Regla visual**: al inicio de cada ronda, se escribe el nombre del agente burgués. Al final de la ronda, se escribe la carta que jugó. En la próxima ronda, se elige un nuevo agente.
+
+**Diseño**: una pizarra pequeña o una hoja plastificada donde se pueda escribir y borrar. O fichas con los nombres de los jugadores.
+
+**Nota**: el agente burgués no gana nada personalmente (salvo en AB7, AB12, AB13, AB14, AB15 y AB16). Eso debe quedar claro en el tablero: "El agente no gana. Ejecuta la lógica del capital."
+
+
+### Zona 5: Jugadores
+
+```
++---------------------------+
+| JUGADOR 1: Ana            |
+|                           |
+| Recursos personales:      |
+| [0---1---2---3---4---5]   |
+| [6---7---8---9---10--15]  |
+|                           |
+| Conciencia personal:      |
+| [0---1---2---3---4---5]   |
+| [6---7---8---9---10]      |
+|                           |
+| Fichas de Trabajador      |
+| Cooptado:                 |
+| [ ] [ ] [ ] [ ] [ ]       |
+|                           |
++---------------------------+
+```
+
+**Regla visual**: cada jugador tiene su recuadro. Los Recursos personales se marcan con una ficha o un clip. La Conciencia personal se marca con una ficha. Las fichas de Trabajador Cooptado se marcan con una X o una ficha roja.
+
+**Efectos de las fichas de Trabajador Cooptado** (recordatorio en el tablero):
+
+- 1 ficha: opción egoísta obligatoria. -1 Solidaridad por turno.
+- 2 fichas: -1 Solidaridad por turno. No dona Recursos.
+- 3 fichas: -1 Solidaridad, -1 Conciencia colectiva por turno. "Partido de los trabajadores" cuesta +2 Solidaridad.
+- 4 fichas: **Reacción**. El colectivo pierde. La burguesía gana.
+
+**Nota**: los Recursos personales máximos son 15. La Conciencia personal máxima es 10. Si un jugador llega a 10 de Conciencia personal, es inmune a la cooptación.
+
+
+### Zona 6: Organización
+
+**Diseño**: 18 casillas, una por cada carta de Organización. Cada casilla tiene el nombre, el requisito y el efecto.
+
+```
+ORGANIZACIÓN (cartas compradas)
+
+NIVEL 1: BASES
++----------------+  +----------------+  +----------------+
+| O1. Org. trab. |  | O2. Asamblea   |  | O3. Coop.      |
+| 3 Solidaridad  |  | 4 Solidaridad  |  | 4 Sol + 3 Rec  |
+| +1 Sol/turno   |  | +1 Conc. col.  |  | +2 Rec/turno   |
++----------------+  +----------------+  +----------------+
++----------------+  +----------------+
+| O4. Fondo      |  | O5. Medio      |
+| 4 Solidaridad  |  | 4 Sol + 2 Rec  |
+| +3 Rec, +1 Sol |  | +1 Conc +1 Cult|
++----------------+  +----------------+
+
+NIVEL 2: CONSOLIDACIÓN
++----------------+  +----------------+  +----------------+
+| O6. Reforma    |  | O7. Huerta     |  | O8. Espacio    |
+| 4 Sol + 3 Rec  |  | 3 Sol + Ref.   |  | 3 Sol + Ref.   |
+| +1 Rec/turno   |  | +1 Rec, +1 Sol |  | +1 Rec, +1 Sol |
++----------------+  +----------------+  +----------------+
++----------------+  +----------------+  +----------------+
+| O9. Banco      |  | O10. Conc.     |  | O16. Educación |
+| 4 Sol + 3 Rec  |  | 5 Sol + 3 Rec  |  | 5 Sol + 3 Rec  |
+| Soberanía      |  | Quita 1 CME    |  | +1 Conc +1 Cult|
++----------------+  +----------------+  +----------------+
++----------------+  +----------------+
+| O17. Salud     |  | O18. Vivienda  |
+| 5 Sol + 3 Rec  |  | 5 Sol + 4 Rec  |
+| +1 Sol +1 Conc |  | +1 Sol +1 Conc |
++----------------+  +----------------+
+
+NIVEL 3: AVANCE
++----------------+  +----------------+
+| O11. Internac. |  | O12. Huelga g. |
+| 6 Sol + 2 Rec  |  | 6 Sol + 4 Rec  |
+| +1 Sol +1 Conc |  | Descarta 2 CR  |
++----------------+  +----------------+
+
+NIVEL 4: OBJETIVOS FINALES
++----------------+  +----------------+  +----------------+
+| O13. Partido   |  | O14. Abolición |  | O15. Sociedad  |
+| 9 Sol + 5 Rec  |  | 10 Conc, 8 Sol |  | 12 Conc. col.  |
+| +2 Conc        |  | Victoria       |  | Victoria       |
++----------------+  +----------------+  +----------------+
+```
+
+**Regla visual**: cada vez que el colectivo compra una carta de Organización, se marca la casilla con una ficha verde. Las cartas compradas son permanentes (salvo que una Acción Burguesa las descarte).
+
+**Reglas de revelación**:
+- Al inicio, se revelan 3 cartas de Nivel 1.
+- Cuando se compra 1, se revela 1 nueva.
+- Las cartas de Nivel 3 se revelan tras comprar 4 cartas de Nivel 1-2.
+- Las cartas de Nivel 4 se revelan tras comprar 7 cartas de Nivel 1-3.
+
+
+### Zona 7: Cartas visibles
+
+```
+ORGANIZACIÓN (3 visibles): [O__] [O__] [O__]
+VIDA COTIDIANA (última): [T__]
+CRISIS ACTIVAS: [CR__] [CR__]
+CARTAS PERSISTENTES: [A__] [C__] [D__] [T__]
+```
+
+**Regla visual**: aquí se colocan las cartas que están boca arriba en la mesa. Las 3 cartas de Organización visibles, la última carta de Vida Cotidiana, las Crisis activas y las cartas persistentes.
+
+
+### Zona 8: Estado de la partida
+
+```
+VICTORIA:
+[ ] Abolición de la propiedad privada
+[ ] Sociedad sin clases
+[ ] Partido de los trabajadores
+[ ] Transición pacífica (Ventana +10)
+[ ] 12 Conciencia colectiva
+
+DERROTA:
+[ ] Recursos colectivos 0
+[ ] Solidaridad 0
+[ ] Ventana -11 (Guerra Civil)
+[ ] Fascismo sin resistencia
+[ ] Reacción (4+ fichas de Trabajador Cooptado)
+```
+
+**Regla visual**: cada vez que se cumple una condición, se marca con una X. Si se cumple una de victoria, la partida termina. Si se cumple una de derrota, la partida termina.
+
+
+## PARTE 3: Diseño de las tarjetas de jugador
+
+Cada jugador tiene una **tarjeta de jugador** con sus contadores personales. Es una hoja plastificada o de cartón donde se escriben o marcan los valores.
+
+### Tarjeta de jugador
+
+```
++------------------------------------------+
+|  JUGADOR: ______________________________  |
+|                                          |
+|  RECURSOS PERSONALES (0-15)              |
+|  [0---1---2---3---4---5---6---7---8---9] |
+|  [10--11--12--13--14--15]                |
+|                                          |
+|  CONCIENCIA PERSONAL (0-10)              |
+|  [0---1---2---3---4---5---6---7---8---9] |
+|  [10]                                    |
+|                                          |
+|  FICHAS DE TRABAJADOR COOPTADO (0-5)     |
+|  [ ] [ ] [ ] [ ] [ ]                     |
+|                                          |
+|  EFECTOS:                                |
+|  0-2: Alienado                           |
+|  3-5: Consciente                         |
+|  6-7: Comprometido (inmune a cooptación) |
+|  8-10: Militante (quita fichas a otros)  |
+|                                          |
++------------------------------------------+
+```
+
+**Regla visual**: cada jugador marca sus Recursos personales y su Conciencia personal con una ficha o un clip. Las fichas de Trabajador Cooptado se marcan con una X o una ficha roja.
+
+**Nota**: la Conciencia personal es el único freno a la cooptación. A 6+, el jugador es inmune. A 8+, puede quitar fichas a otros.
+
+
+### Tarjeta de referencia rápida
+
+Cada jugador también tiene una **tarjeta de referencia rápida** con las reglas básicas.
+
+```
++------------------------------------------+
+|  REFERENCIA RÁPIDA                       |
+|                                          |
+|  TURNO:                                  |
+|  1. Roba 1 carta de Situación            |
+|  2. Elige opción A, B o C                |
+|  3. Fase de Organización (colectivo)     |
+|  4. Turno 3: Vida Cotidiana + Crisis +   |
+|     Acción Burguesa                      |
+|                                          |
+|  COOPTACIÓN:                             |
+|  Conciencia personal 6+: inmune          |
+|  Conciencia personal 0-2: vulnerable     |
+|                                          |
+|  RECURSOS:                               |
+|  Individual: +2 personales, -1 Solidaridad|
+|  Colectivo: +1 colectivo, +1 Solidaridad |
+|  Político: +2 colectivos, +1 Conc.       |
+|                                          |
+|  VENTANA DE OVERTON:                     |
+|  +10: Transición pacífica                |
+|  -10: Fascismo                           |
+|  -11: Guerra Civil                       |
+|                                          |
++------------------------------------------+
+```
+
+
+## PARTE 4: Materiales recomendados
+
+| Material | Cantidad | Función |
+|---|---|---|
+| **Tablero** | 1 | Registro del estado de la partida |
+| **Tarjetas de jugador** | 5 | Contadores personales |
+| **Tarjetas de referencia** | 5 | Reglas básicas |
+| **Cartas de Situación** | 59 únicas (~90 con copias) | Decisiones de los jugadores |
+| **Cartas de Crisis** | 15 | Eventos del sistema |
+| **Cartas de Acción Burguesa** | 17 | Acciones del capital |
+| **Cartas de Vida Cotidiana** | 16 | Decisiones colectivas |
+| **Cartas de Organización** | 18 | Logros colectivos |
+| **Fichas** | 100+ | Marcadores de recursos, conciencia, fichas |
+| **Dados** | 2 | Para resolver empates |
+| **Manual** | 1 | Reglas completas |
+
+
