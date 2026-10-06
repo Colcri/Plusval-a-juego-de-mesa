@@ -41,8 +41,8 @@ Toda la documentación, reglas y archivos de este juego se distribuyen bajo la *
 ---
 
 ## 📁 Estructura del Repositorio
-*   `/reglamento.pdf`: El documento borrador oficial del juego.
-*   `/componentes`: Diseños preliminares de tarjetas, tableros o fichas.
+*   `/Reglas/reglamento`: El documento borrador oficial del juego.
+*   `/Componentes/Cartas`: Diseños preliminares de tarjetas, tableros o fichas.
 *   `LICENSE`: Texto completo de los términos legales de la Licencia PPL.
 
 ---
