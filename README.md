@@ -1,4 +1,4 @@
-# Plusval-a-juego-de-mesa
+# Plusvalía-juego-de-mesa
 Juego de mesa cooperativo para aprender sobre la lucha contra el capital
 
 # 🎲 Plusvalía, juego de mesa — Co-creación Comunitaria
